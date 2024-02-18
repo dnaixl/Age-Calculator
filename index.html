@@ -6,7 +6,7 @@
     <title>Age Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="fade">
     <div id="calculator" class="container">
         <h1>Age Calculator</h1>
         <p class="description">Enter ages below and click "Enter" to add them to the list. Click "Calculate" to get the total age.</p>
@@ -37,11 +37,14 @@
         </div>
         <div class="buttons">
             <button class="actionBtn" onclick="enterAge()">Enter</button>
-            <button class="actionBtn" onclick="calculateTotal()">Calculate</button>
+            <button class="actionBtnCalc" onclick="calculateTotal()">Calculate</button>
         </div>
         
         <div class="console-container">
             <div id="consoleOutput" class="console"></div>
+        </div>
+        <div>
+            <button class="changeBackgroundBtn" onclick="changeBackground()">Change Background</button>
         </div>
     </div>
    
