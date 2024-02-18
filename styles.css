@@ -5,6 +5,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1707878899965-bbbe83b3c309?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     min-width: 400px;
-    background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 h1 {
@@ -103,13 +104,22 @@ h1 {
     color: #fff;
     cursor: pointer;
 }
+.actionBtnCalc {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightgreen;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 .actionBtn:hover {
     background-color: #1e65cb;
 }
 
 .console {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -121,6 +131,17 @@ h1 {
     border-radius: 4px;
     margin-bottom: 20px;
     height: 50px;
-    overflow: auto; /* Ensure text will appear with scrollbars if necessary */
-    max-height: 200px; /* Set a maximum height for the container */
+    overflow: auto;
+    max-height: 200px;
 }
+
+.changeBackgroundBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #616161;
+    color: #fff;
+    cursor: pointer; 
+}
+
