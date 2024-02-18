@@ -6,10 +6,10 @@ body {
 }
 
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 90%; /* Changed to percentage */
+    margin: 5% auto; /* Changed to percentage */
     background-color: #fff;
-    padding: 20px;
+    padding: 5%; /* Changed to percentage */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -26,14 +26,16 @@ h1 {
 
 .input-container {
     display: flex;
+    flex-direction: column; /* Changed from row to column on small screens */
     align-items: center;
     margin-bottom: 20px;
 }
 
 .age-input {
-    flex: 1;
+    width: 90%; /* Changed to percentage */
+    max-width: 300px; /* Added to limit width on larger screens */
     height: 40px;
-    font-size: 18px;
+    font-size: 1.2em; /* Changed to relative unit */
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -42,47 +44,53 @@ h1 {
 .keypad {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 0; /* Removed margin on small screens */
 }
 
 .key-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Centered on small screens */
     margin-bottom: 10px;
 }
 
 .key {
-    width: 50px;
+    width: 15%; /* Changed to percentage */
+    max-width: 50px; /* Added to limit width on larger screens */
     height: 50px;
-    font-size: 18px;
+    font-size: 1.2em; /* Changed to relative unit */
     border: none;
     border-radius: 4px;
     background-color: #ddd;
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 2.5%; /* Changed to percentage */
 }
 
 .key.zero {
-    width: 100px;
+    width: 30%; /* Changed to percentage */
+    max-width: 100px; /* Added to limit width on larger screens */
 }
 
 .key.clear {
     background-color: #ff0000;
     color: #fff;
     margin-right: 0;
-    font-size: 16px;
-    width: 55px ;
+    font-size: 1em; /* Changed to relative unit */
+    width: 17.5%; /* Changed to percentage */
+    max-width: 55px; /* Added to limit width on larger screens */
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Changed from row to column on small screens */
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .actionBtn {
-    padding: 10px 20px;
-    font-size: 16px;
+    width: 90%; /* Changed to percentage */
+    max-width: 200px; /* Added to limit width on larger screens */
+    padding: 10px;
+    font-size: 1em; /* Changed to relative unit */
     border: none;
     border-radius: 4px;
     background-color: #2979ff;
@@ -96,7 +104,7 @@ h1 {
 
 .console {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2em; /* Changed to relative unit */
 }
 
 .console-container {
@@ -109,3 +117,4 @@ h1 {
     height: 50px;
     overflow: auto;
     max-height: 200px; 
+}
