@@ -6,10 +6,10 @@ body {
 }
 
 .container {
-    max-width: 90%; /* Changed to percentage */
-    margin: 5% auto; /* Changed to percentage */
+    max-width: 90px; 
+    margin: 5px auto; 
     background-color: #fff;
-    padding: 5%; /* Changed to percentage */
+    padding: 5px; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -26,16 +26,16 @@ h1 {
 
 .input-container {
     display: flex;
-    flex-direction: column; /* Changed from row to column on small screens */
+    flex-direction: row; /* Changed from row to column on small screens */
     align-items: center;
     margin-bottom: 20px;
 }
 
 .age-input {
-    width: 90%; /* Changed to percentage */
+    width: 90px; /* Changed to percentage */
     max-width: 300px; /* Added to limit width on larger screens */
     height: 40px;
-    font-size: 1.2em; /* Changed to relative unit */
+    font-size: 12pt; /* Changed to relative unit */
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -44,7 +44,7 @@ h1 {
 .keypad {
     display: flex;
     flex-direction: column;
-    margin-left: 0; /* Removed margin on small screens */
+    margin-left: 10; /* Removed margin on small screens */
 }
 
 .key-row {
@@ -54,10 +54,10 @@ h1 {
 }
 
 .key {
-    width: 15%; /* Changed to percentage */
+    width: 50px; /* Changed to percentage */
     max-width: 50px; /* Added to limit width on larger screens */
     height: 50px;
-    font-size: 1.2em; /* Changed to relative unit */
+    font-size: 12pt; /* Changed to relative unit */
     border: none;
     border-radius: 4px;
     background-color: #ddd;
@@ -66,7 +66,7 @@ h1 {
 }
 
 .key.zero {
-    width: 30%; /* Changed to percentage */
+    width: 80px; /* Changed to percentage */
     max-width: 100px; /* Added to limit width on larger screens */
 }
 
@@ -74,23 +74,23 @@ h1 {
     background-color: #ff0000;
     color: #fff;
     margin-right: 0;
-    font-size: 1em; /* Changed to relative unit */
-    width: 17.5%; /* Changed to percentage */
+    font-size: 12pt; /* Changed to relative unit */
+    width: 55px; /* Changed to percentage */
     max-width: 55px; /* Added to limit width on larger screens */
 }
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Changed from row to column on small screens */
+    flex-direction: row; /* Changed from row to column on small screens */
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .actionBtn {
-    width: 90%; /* Changed to percentage */
+    width: 90px; /* Changed to percentage */
     max-width: 200px; /* Added to limit width on larger screens */
     padding: 10px;
-    font-size: 1em; /* Changed to relative unit */
+    font-size: 12pt; /* Changed to relative unit */
     border: none;
     border-radius: 4px;
     background-color: #2979ff;
@@ -104,7 +104,7 @@ h1 {
 
 .console {
     text-align: center;
-    font-size: 1.2em; /* Changed to relative unit */
+    font-size: 12pt; /* Changed to relative unit */
 }
 
 .console-container {
