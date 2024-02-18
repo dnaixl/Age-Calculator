@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body class="fade">
-    <div id="calculator" class="container">
-        <h1>Age Calculator</h1>
-        <p class="description">Enter ages below and click "Enter" to add them to the list. Click "Calculate" to get the total age.</p>
-        
-        <div class="input-container">
-            <div class="keypad">
-                <div class="key-row">
-                    <button class="key" onclick="buttonClick(1)">1</button>
-                    <button class="key" onclick="buttonClick(2)">2</button>
-                    <button class="key" onclick="buttonClick(3)">3</button>
-                </div>
-                <div class="key-row">
-                    <button class="key" onclick="buttonClick(4)">4</button>
-                    <button class="key" onclick="buttonClick(5)">5</button>
-                    <button class="key" onclick="buttonClick(6)">6</button>
-                </div>
-                <div class="key-row">
-                    <button class="key" onclick="buttonClick(7)">7</button>
-                    <button class="key" onclick="buttonClick(8)">8</button>
-                    <button class="key" onclick="buttonClick(9)">9</button>
-                </div>
-                <div class="key-row">
-                    <button class="key zero" onclick="buttonClick(0)">0</button>
-                    <button class="key clear" onclick="clearInput()">Clear</button>
-                </div>
-            <input type="text" id="ageInput" class="age-input" readonly>
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="actionBtn" onclick="enterAge()">Enter</button>
-            <button class="actionBtnCalc" onclick="calculateTotal()">Calculate</button>
-        </div>
-        
-        <div class="console-container">
-            <div id="consoleOutput" class="console"></div>
-        </div>
-        <div>
-            <button class="changeBackgroundBtn" onclick="changeBackground()">Change Background</button>
-        </div>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">25:00</div>
+    <div class="buttons-container">
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
     </div>
-   
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
