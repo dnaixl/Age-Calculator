@@ -15,11 +15,15 @@ function clearInput() {
 function enterAge() {
     let age = parseInt(ageInput.value);
     if (!isNaN(age)) {
+      if (age > 150) {
+        consoleOutput.textContent += "Error: Age cannot be greater than 150\n";
+      } else {
         ages.push(age);
         consoleOutput.textContent += `${age}, `;
-        ageInput.value = "";
+      }
+      ageInput.value = ""; 
     }
-}
+  }
 
 function calculateTotal() {
     let totalAge = ages.reduce((acc, curr) => acc + curr, 0);
