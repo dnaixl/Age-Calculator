@@ -39,7 +39,21 @@ function changeBackground() {
         'https://images.unsplash.com/photo-1707497009301-78bed8b1a51d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     ];
 
-    let randomIndex = Math.floor(Math.random() * images.length);
-    document.body.style.backgroundImage = `url(${images[randomIndex]})`;
+    let usedImages = [];
+
+    function getRandomImage() {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * images.length);
+        } while (usedImages.includes(randomIndex));
+
+        usedImages.push(randomIndex);
+        return images[randomIndex];
+    }
+
+    document.body.style.backgroundImage = `url(${getRandomImage()})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
 }
+
 
