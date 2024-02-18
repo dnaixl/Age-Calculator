@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator" class="container">
+        <h1>Age Calculator</h1>
+        <p class="description">Enter ages below and click "Enter" to add them to the list. Click "Calculate" to get the total age.</p>
+        <div class="input-container">
+            <input type="text" id="ageInput" class="age-input" readonly>
+            <div class="keypad">
+                <div class="key-row">
+                    <button class="key" onclick="buttonClick(1)">1</button>
+                    <button class="key" onclick="buttonClick(2)">2</button>
+                    <button class="key" onclick="buttonClick(3)">3</button>
+                </div>
+                <div class="key-row">
+                    <button class="key" onclick="buttonClick(4)">4</button>
+                    <button class="key" onclick="buttonClick(5)">5</button>
+                    <button class="key" onclick="buttonClick(6)">6</button>
+                </div>
+                <div class="key-row">
+                    <button class="key" onclick="buttonClick(7)">7</button>
+                    <button class="key" onclick="buttonClick(8)">8</button>
+                    <button class="key" onclick="buttonClick(9)">9</button>
+                </div>
+                <div class="key-row">
+                    <button class="key zero" onclick="buttonClick(0)">0</button>
+                    <button class="key clear" onclick="clearInput()">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="actionBtn" onclick="enterAge()">Enter</button>
+            <button class="actionBtn" onclick="calculateTotal()">Calculate</button>
+        </div>
+        
+        <div class="console-container">
+            <div id="consoleOutput" class="console"></div>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
