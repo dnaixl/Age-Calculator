@@ -9,6 +9,7 @@ function buttonClick(number) {
 function clearInput() {
     ageInput.value = "";
     consoleOutput.textContent = "";
+    let ages = [];
 }
 
 function enterAge() {
