@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.age-input {
+    flex: 1;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.key-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.key.zero {
+    width: 100px;
+}
+
+.key.clear {
+    background-color: #ff0000;
+    color: #fff;
+    margin-right: 0;
+    font-size: 16px;
+    width: 55px ;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.actionBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2979ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.actionBtn:hover {
+    background-color: #1e65cb;
+}
+
+.console {
+    text-align: center;
+    font-size: 18px;
+}
+
+.console-container {
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 50px;
+    overflow: auto;
+    max-height: 200px; 
